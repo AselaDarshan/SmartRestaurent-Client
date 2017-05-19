@@ -4,6 +4,8 @@ package com.company;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -76,10 +78,18 @@ class Item {
         name = new JLabel();
 
         qty = new JLabel();
-        readyButton = new JButton("READY");
-        readyButton.setForeground(new Color(12,30,20));
-        readyButton.setBackground(new Color(130,150,23));
-
+        readyButton = new JButton("PENDING");
+        readyButton.setForeground(new Color(32,10,20));
+        readyButton.setBackground(new Color(190,100,23));
+        readyButton.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                readyButton.setText("READY");
+                readyButton.setForeground(new Color(12,30,20));
+                readyButton.setBackground(new Color(130,150,23));
+            }
+        });
 
         itemPanel.add(name,nameC);
         itemPanel.add(qty,qtyC);
