@@ -29,8 +29,16 @@ public class OrderWindow {
 //
         //panel.setBackground(Color.lightGray);
         final BufferedImage image;
+        BufferedImage im;
         try {
-            image = ImageIO.read(new File("background.jpg"));
+            try {
+                im = ImageIO.read(getClass().getResource("/background.jpg"));
+            }
+            catch (java.lang.IllegalArgumentException e){
+                im = ImageIO.read(new File("background.jpg"));
+            }
+            image = im;
+
             panel = new JPanel() {
                 @Override
                 protected void paintComponent(Graphics g) {
@@ -44,6 +52,10 @@ public class OrderWindow {
             e.printStackTrace();
         }
 
+//        JButton closeButton = new JButton("x");
+//        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+//        closeButton.setAlignmentX(Component.RIGHT_ALIGNMENT);
+//        panel.add(closeButton);
 
 
 //
@@ -54,17 +66,23 @@ public class OrderWindow {
 
     public void run() {
 
-        frame = new JFrame("Orders");
+        frame = new JFrame("Sliver Ring Village Hotel");
+      //  frame.setIconImage(new ImageIcon("background.jpg").getImage());
         //frame.setBounds(0,0,400,400);
+
+        JScrollPane jsp = new JScrollPane(panel,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
+                JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        jsp.setPreferredSize(new Dimension(frame.getWidth(),frame.getHeight()));
         frame.setContentPane(panel);
-        frame.setLayout(new BorderLayout());
+//        frame.setContentPane(jsp);
+//        frame.setLayout(new BorderLayout());
         //frame.setContentPane(new JLabel(new ImageIcon("\\background.jpg")));
-        frame.setLayout(new FlowLayout());
+//        frame.setLayout(new FlowLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
         frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
-        frame.setUndecorated(true);
+      //  frame.setUndecorated(true);
         frame.pack();
         frame.setVisible(true);
 
@@ -100,9 +118,17 @@ public class OrderWindow {
         System.out.println("Adding order");
         JPanel orderPanel = new JPanel();
 
+        BufferedImage im;
         final BufferedImage image;
         try {
-            image = ImageIO.read(new File("order_title.jpg"));
+           // image = ImageIO.read(new File("order_title.jpg"));
+            try {
+                im = ImageIO.read(getClass().getResource("/order_title.jpg"));
+            }
+            catch (java.lang.IllegalArgumentException e){
+                im = ImageIO.read(new File("order_title.jpg"));
+            }
+            image = im;
             orderPanel = new JPanel() {
                 @Override
                 protected void paintComponent(Graphics g) {
@@ -170,7 +196,8 @@ public class OrderWindow {
                 while (true) {
                     String message = producer.getMessage();
                     System.out.println("Got message: " + message);
-                    addOrder(message);
+                    if(message!=null && !message.equals("updates"))
+                        addOrder(message);
                     sleep(200);
                 }
             } catch (InterruptedException e) {

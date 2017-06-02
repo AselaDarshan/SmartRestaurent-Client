@@ -6,6 +6,7 @@ import java.util.Vector;
 
 class ThreadHandler extends Thread {
     Socket newsock;
+    PrintWriter outp;
     int n;
 
     static final int MAXQUEUE = 5;
@@ -20,7 +21,11 @@ class ThreadHandler extends Thread {
     public void run() {
         try {
 
-            PrintWriter outp = new PrintWriter(newsock.getOutputStream(), true);
+            outp = new PrintWriter(newsock.getOutputStream(), true);
+            SendHandler sendHandler = new SendHandler();
+            sendHandler.start();
+
+
             BufferedReader inp = new BufferedReader(new InputStreamReader(
                     newsock.getInputStream()));
 
@@ -31,16 +36,17 @@ class ThreadHandler extends Thread {
             while (more_data) {
                 line = inp.readLine();
                 putMessage(line);
-                System.out.println("Message '" + line + "' echoed back to client.");
+//                System.out.println("Message '" + line + "' echoed back to client.");
                 if (line == null) {
                     System.out.println("line = null");
                     more_data = false;
                 } else {
-                    outp.println("From server: " + line + ". \n");
+                  //  outp.println("From server: " + line + ". \n");
                     if (line.trim().equals("QUIT"))
                         more_data = false;
                 }
             }
+
             newsock.close();
             System.out.println("Disconnected from client number: " + n);
         } catch (Exception e) {
@@ -65,5 +71,38 @@ class ThreadHandler extends Thread {
         String message = (String) messages.firstElement();
         messages.removeElement(message);
         return message;
+    }
+
+    class SendHandler extends Thread {
+
+        @Override
+        public void run() {
+            String message  = null;
+            while (true){
+                while (message==null){
+                    message = CommuncationBus.getMessage();
+                }
+                System.out.println("Sending to client: "+message);
+
+                outp.println(message);
+                if(outp.checkError()){
+                    System.out.println("Connection status: " + !outp.checkError());
+                    CommuncationBus.putMessage(message);
+                }
+//                while (outp.checkError()) {
+//                    System.out.println("Connection status: " + !outp.checkError());
+//                    try {
+//                        outp.close();
+//                        outp = new PrintWriter(newsock.getOutputStream(), true);
+//                        outp.println(message);
+//                    } catch (IOException e) {
+//                        System.out.println(e);
+//                        e.printStackTrace();
+//                    }
+//
+//                }
+                message = null;
+            }
+        }
     }
 }

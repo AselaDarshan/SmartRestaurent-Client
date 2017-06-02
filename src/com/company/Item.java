@@ -17,6 +17,8 @@ class Item {
     private JLabel qty;
     private JButton readyButton;
     private Boolean state;
+    private String tableId;
+    private Order order;
 
     public JPanel getItemPanel() {
         return itemPanel;
@@ -33,11 +35,20 @@ class Item {
         this.state = state;
     }
 
-    public Item() {
+    public Item(String tableId,Order order) {
+        this.order = order;
+        this.tableId = tableId;
         itemPanel = new JPanel();
         final BufferedImage image;
+        BufferedImage im;
         try {
-            image = ImageIO.read(new File("order_bg.jpg"));
+            try {
+                im = ImageIO.read(getClass().getResource("/order_bg.jpg"));
+            }
+            catch (java.lang.IllegalArgumentException e){
+                im = ImageIO.read(new File("background.jpg"));
+            }
+            image = im;
             itemPanel = new JPanel() {
                 @Override
                 protected void paintComponent(Graphics g) {
@@ -88,6 +99,10 @@ class Item {
                 readyButton.setText("READY");
                 readyButton.setForeground(new Color(12,30,20));
                 readyButton.setBackground(new Color(130,150,23));
+                CommuncationBus.putMessage(name.getText()+" for table "+tableId+" is Ready!");
+                order.itemReady(itemPanel);
+                readyButton.removeActionListener(this);
+
             }
         });
 

@@ -5,6 +5,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -16,6 +19,7 @@ public class Order {
 
 
     private ArrayList<JPanel> items;
+    private int itemCount;
 
     public String getTableId() {
         return tableId;
@@ -24,8 +28,26 @@ public class Order {
     private String tableId;
 
 
+    public void itemReady(JPanel itemPanel){
+        itemCount--;
+        if(itemCount==0){
+            JButton closeButton = new JButton("Close");
+            closeButton.setBackground(new Color(182,40,20));
+            closeButton.addActionListener(e -> {
+                        JPanel parentPanel = (JPanel) itemPanel.getParent().getParent();
+                        itemPanel.getParent().removeAll();
+                        parentPanel.revalidate();
+                    }
+
+            );
+            itemPanel.getParent().setBackground(new Color(52,30,20));
+            itemPanel.getParent().add(closeButton);
+        }
+    }
+
     public Order(String order){
         JSONObject oderObj = null;
+
         items = new ArrayList<>();
 
         System.out.println("decoding json");
@@ -48,7 +70,7 @@ public class Order {
             try {
 //                if ( oderObj.get(key) instanceof JSONObject ) {
                     System.out.println(key+"---"+oderObj.get(key));
-                    Item item =  new Item();
+                    Item item =  new Item(tableId,this);
                     item.setNameLabelText(key);
                     item.setQtyLabelText(String.valueOf(oderObj.getInt(key)));
 
@@ -59,6 +81,8 @@ public class Order {
                 e.printStackTrace();
             }
         }
+        itemCount = items.size();
+        CommuncationBus.putMessage("order_success");
 
     }
     public ArrayList<JPanel> getItems() {
