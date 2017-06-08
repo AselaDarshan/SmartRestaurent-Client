@@ -1,150 +1,55 @@
 package com.company;
 
+/**
+ * Created by asela on 6/5/17.
+ */
+public class Item {
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-
-class Item {
+    private double amount;
+    private int qty;
+    private String name;
+    private int menuId;
 
 
-    private JLabel name;
-    private JLabel qty;
-    private JButton readyButton;
-    private Boolean state;
-    private String tableId;
-    private Order order;
-
-    public JPanel getItemPanel() {
-        return itemPanel;
+    public void setAmount(double amount) {
+        this.amount = amount;
     }
 
-    private JPanel itemPanel;
-
-
-    public Boolean getState() {
-        return state;
+    public void setQty(int qty) {
+        this.qty = qty;
     }
 
-    public void setState(Boolean state) {
-        this.state = state;
-    }
-
-    public Item(String tableId,Order order) {
-        this.order = order;
-        this.tableId = tableId;
-        itemPanel = new JPanel();
-        final BufferedImage image;
-        BufferedImage im;
-        try {
-            try {
-                im = ImageIO.read(getClass().getResource("/order_bg.jpg"));
-            }
-            catch (java.lang.IllegalArgumentException e){
-                im = ImageIO.read(new File("background.jpg"));
-            }
-            image = im;
-            itemPanel = new JPanel() {
-                @Override
-                protected void paintComponent(Graphics g) {
-                    super.paintComponent(g);
-                    g.drawImage(image, 0, 0, null);
-                }
-            };
-        } catch (IOException e) {
-
-            System.out.println("File Not Found");
-            e.printStackTrace();
-        }
-
-
-        itemPanel.setLayout(new GridBagLayout());
-        GridBagConstraints nameC = new GridBagConstraints();
-        nameC.fill = GridBagConstraints.HORIZONTAL;
-        nameC.weightx = 1;
-        nameC.gridx=0;
-        nameC.gridy=0;
-        nameC.anchor = GridBagConstraints.FIRST_LINE_START;
-
-        GridBagConstraints qtyC = new GridBagConstraints();
-        qtyC.anchor = GridBagConstraints.CENTER;
-        qtyC.fill = GridBagConstraints.HORIZONTAL;
-//        qtyC.weightx = 1;
-        qtyC.gridx=1;
-        qtyC.gridy=0;
-
-
-        GridBagConstraints buttonC = new GridBagConstraints();
-        buttonC.anchor = GridBagConstraints.LINE_END;
-        buttonC.fill = GridBagConstraints.HORIZONTAL;
-//        buttonC.weightx = 1;
-        buttonC.gridx=2;
-        buttonC.gridy=0;
-
-        name = new JLabel();
-
-        qty = new JLabel();
-        readyButton = new JButton("PENDING");
-        readyButton.setForeground(new Color(32,10,20));
-        readyButton.setBackground(new Color(190,100,23));
-        readyButton.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
-                readyButton.setText("READY");
-                readyButton.setForeground(new Color(12,30,20));
-                readyButton.setBackground(new Color(130,150,23));
-                CommuncationBus.putMessage(name.getText()+" for table "+tableId+" is Ready!");
-                order.itemReady(itemPanel);
-                readyButton.removeActionListener(this);
-
-            }
-        });
-
-        itemPanel.add(name,nameC);
-        itemPanel.add(qty,qtyC);
-        itemPanel.add(readyButton,buttonC);
-
-        itemPanel.setBorder(BorderFactory.createLineBorder(Color.black));
-        name.setBorder(BorderFactory.createEmptyBorder(5,30,5,0));
-        name.setFont(new Font("serif", Font.BOLD, 16));
-        qty.setBorder(BorderFactory.createEmptyBorder(0,40,0,40));
-        qty.setFont(new Font("serif", Font.BOLD, 16));
-        readyButton.setBorder(BorderFactory.createEmptyBorder(5,10,5,10));
-//        readyButton.setSize(60,20);
-        state = false;
-
-
-    }
-
-    public JLabel getNameLabel() {
-        return name;
-    }
-
-    public void setNameLabelText(String name) {
-        this.name.setText(name);
+    public void setName(String name) {
+        this.name = name;
     }
 
 
-    public JLabel getQtyLabel() {
+
+    public int getMenuId() {
+        return menuId;
+    }
+
+    public void setMenuId(int menuId) {
+        this.menuId = menuId;
+    }
+
+
+
+    public Item(double amount,int qty,String name){
+        this.amount = amount;
+        this.qty = qty;
+        this.name =name;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public int getQty() {
         return qty;
     }
 
-    public void setQtyLabelText(String qty) {
-        this.qty.setText(qty);
+    public String getName() {
+        return name;
     }
-
-    public JButton getReadyButton() {
-        return readyButton;
-    }
-
-    public void setReadyButton(JButton readyButton) {
-        this.readyButton = readyButton;
-    }
-
 }

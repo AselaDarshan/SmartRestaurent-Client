@@ -1,13 +1,11 @@
 package com.company;
 
-import com.company.Item;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -18,8 +16,24 @@ public class Order {
 
 
 
-    private ArrayList<JPanel> items;
+    private ArrayList<JPanel> itemPanelList;
+
+    public ArrayList<Item> getItemList() {
+        return itemList;
+    }
+
+    private ArrayList<Item> itemList;
     private int itemCount;
+    private int orderId;
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+
 
     public String getTableId() {
         return tableId;
@@ -48,7 +62,8 @@ public class Order {
     public Order(String order){
         JSONObject oderObj = null;
 
-        items = new ArrayList<>();
+        itemPanelList = new ArrayList<>();
+        itemList = new ArrayList<>();
 
         System.out.println("decoding json");
         try {
@@ -70,23 +85,28 @@ public class Order {
             try {
 //                if ( oderObj.get(key) instanceof JSONObject ) {
                     System.out.println(key+"---"+oderObj.get(key));
-                    Item item =  new Item(tableId,this);
-                    item.setNameLabelText(key);
-                    item.setQtyLabelText(String.valueOf(oderObj.getInt(key)));
+                    ItemPanel itemPanel =  new ItemPanel(tableId,this);
+                    itemPanel.setNameLabelText(key);
+                    itemPanel.setQtyLabelText(String.valueOf(oderObj.getInt(key)));
 
-                    items.add(item.getItemPanel());
+                    itemPanelList.add(itemPanel.getItemPanel());
+
+                    itemList.add(new Item(0,oderObj.getInt(key),key));
+
+
 //                }
             } catch (JSONException e) {
                 System.out.println("Json error in keys");
                 e.printStackTrace();
             }
         }
-        itemCount = items.size();
+        itemCount = itemPanelList.size();
         CommuncationBus.putMessage("order_success");
+        new WebServerCommunication().sendOrder(this);
 
     }
-    public ArrayList<JPanel> getItems() {
-        return items;
+    public ArrayList<JPanel> getItemPanelList() {
+        return itemPanelList;
     }
 }
 

@@ -164,7 +164,7 @@ public class OrderWindow {
         label.setFont(new Font("serif", Font.PLAIN, 24));
         orderPanel.add(label);
 
-        for(JPanel item:order.getItems()){
+        for(JPanel item:order.getItemPanelList()){
             orderPanel.add(item);
 
         }
