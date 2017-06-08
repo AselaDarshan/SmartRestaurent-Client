@@ -1,5 +1,7 @@
 package com.company;
 
+import org.eclipse.paho.client.mqttv3.MqttException;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -23,6 +25,17 @@ public class OrderWindow {
     private int count = 0;
 
     public OrderWindow(){
+        try {
+            MQTTClient mqttClient = new MQTTClient(this,"tcp://iot.eclipse.org:1883","cashier",true,false,null,null);
+            mqttClient.publish("menu",2,"order has been placed".getBytes());
+            MQTTCommuncationThread r1 = new MQTTCommuncationThread(this);
+            Thread t1 = new Thread(r1);
+            t1.start();
+        } catch (MqttException e) {
+            e.printStackTrace();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
         //panel =  new JPanel();
 //        newOrderIndicator =  new JLabel();
 //        newOrderIndicator.setText("Ready");
