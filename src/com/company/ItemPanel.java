@@ -1,6 +1,8 @@
 package com.company;
 
 
+import org.eclipse.paho.client.mqttv3.MqttException;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -100,6 +102,7 @@ class ItemPanel {
                 readyButton.setForeground(new Color(12,30,20));
                 readyButton.setBackground(new Color(130,150,23));
                 CommuncationBus.putMessage(name.getText()+" for table "+tableId+" is Ready!");
+
                 order.itemReady(itemPanel);
                 readyButton.removeActionListener(this);
 

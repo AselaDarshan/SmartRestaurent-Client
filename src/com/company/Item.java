@@ -11,6 +11,17 @@ public class Item {
     private int menuId;
 
 
+
+    private int parentCategory;
+
+    public int getParentCategory() {
+        return parentCategory;
+    }
+
+    public void setParentCategory(int parentCategory) {
+        this.parentCategory = parentCategory;
+    }
+
     public void setAmount(double amount) {
         this.amount = amount;
     }

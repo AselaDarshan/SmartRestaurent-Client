@@ -101,8 +101,8 @@ public class Order {
             }
         }
         itemCount = itemPanelList.size();
-        CommuncationBus.putMessage("order_success");
-        new WebServerCommunication().sendOrder(this);
+        CommuncationBus.putMessage(Constants.ORDER_RECEIVED_TOPIC);
+      //  new WebServerCommunication().sendOrder(this);
 
     }
     public ArrayList<JPanel> getItemPanelList() {

@@ -1,5 +1,7 @@
 package com.company;
 
+import org.eclipse.paho.client.mqttv3.MqttException;
+
 import java.io.*;
 import java.net.*;
 import java.util.Vector;
@@ -73,7 +75,7 @@ class ThreadHandler extends Thread {
         return message;
     }
 
-    class SendHandler extends Thread {
+    public class SendHandler extends Thread {
 
         @Override
         public void run() {
@@ -85,9 +87,10 @@ class ThreadHandler extends Thread {
                 System.out.println("Sending to client: "+message);
 
                 outp.println(message);
+
                 if(outp.checkError()){
                     System.out.println("Connection status: " + !outp.checkError());
-                    CommuncationBus.putMessage(message);
+                   // CommuncationBus.putMessage(message);
                 }
 //                while (outp.checkError()) {
 //                    System.out.println("Connection status: " + !outp.checkError());

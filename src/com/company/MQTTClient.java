@@ -275,7 +275,8 @@ public class MQTTClient implements MqttCallback {
         // An application may choose to implement reconnection
         // logic at this point. This sample simply exits.
         log("Connection to " + brokerUrl + " lost!" + cause);
-        System.exit(1);
+       // CommuncationBus.putMessage("connection_lost");
+      //  System.exit(1);
     }
 
     /**

@@ -26,14 +26,15 @@ public class OrderWindow {
 
     public OrderWindow(){
         try {
-            MQTTClient mqttClient = new MQTTClient(this,"tcp://iot.eclipse.org:1883","cashier",true,false,null,null);
-            mqttClient.publish("menu",2,"order has been placed".getBytes());
+
             MQTTCommuncationThread r1 = new MQTTCommuncationThread(this);
             Thread t1 = new Thread(r1);
             t1.start();
-        } catch (MqttException e) {
-            e.printStackTrace();
-        } catch (Throwable throwable) {
+
+            MessageSender sendHandler = new MessageSender();
+            sendHandler.start();
+
+        }catch (Throwable throwable) {
             throwable.printStackTrace();
         }
         //panel =  new JPanel();
