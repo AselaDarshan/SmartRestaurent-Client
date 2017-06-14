@@ -101,30 +101,30 @@ public class OrderWindow {
         frame.setVisible(true);
 
 
-        int nreq = 1;
-        try
-        {
-            ServerSocket sock = new ServerSocket(8080);
-            System.out.println("Starting Server ...");
-
-            for (;;)
-            {
-
-                Socket newsock = sock.accept();
-                System.out.println("Creating thread ...");
-
-                ThreadHandler t = new ThreadHandler(newsock,nreq);
-                t.start();
-                UIUpdater t1=new UIUpdater(t);
-                t1.start();
-
-            }
-        }
-        catch (Exception e)
-        {
-            System.out.println("IO error in loop " + e);
-        }
-        System.out.println("End!");
+//        int nreq = 1;
+//        try
+//        {
+//            ServerSocket sock = new ServerSocket(8080);
+//            System.out.println("Starting Server ...");
+//
+//            for (;;)
+//            {
+//
+//                Socket newsock = sock.accept();
+//                System.out.println("Creating thread ...");
+//
+//                ThreadHandler t = new ThreadHandler(newsock,nreq);
+//                t.start();
+//                UIUpdater t1=new UIUpdater(t);
+//                t1.start();
+//
+//            }
+//        }
+//        catch (Exception e)
+//        {
+//            System.out.println("IO error in loop " + e);
+//        }
+//        System.out.println("End!");
     }
 
     public void addOrder(String message){
@@ -157,8 +157,8 @@ public class OrderWindow {
         }
 
         orderPanel.setLayout(new BoxLayout(orderPanel, BoxLayout.Y_AXIS));
-        orderPanel.setMinimumSize(new Dimension(50,100));
-        orderPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+        //  orderPanel.setMinimumSize(new Dimension(50,100));
+        //orderPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 
 
 
@@ -174,9 +174,12 @@ public class OrderWindow {
         label.setVisible(true);
         count++;
         label.setForeground(Color.ORANGE);
-        label.setText("Order "+count+": Table "+order.getTableId());
+        label.setText("Table "+order.getTableId()+" ~ "+order.getWaiterUsername());
         label.setFont(new Font("serif", Font.PLAIN, 24));
-        orderPanel.add(label);
+        JPanel titlePanel = new JPanel();
+
+
+        orderPanel.add(titlePanel.add(label));
 
         for(JPanel item:order.getItemPanelList()){
             orderPanel.add(item);

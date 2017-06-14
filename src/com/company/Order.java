@@ -25,6 +25,17 @@ public class Order {
     private ArrayList<Item> itemList;
     private int itemCount;
     private int orderId;
+    private String tableId;
+    private String waiterUsername;
+    public String getWaiterUsername() {
+        return waiterUsername;
+    }
+
+    public void setWaiterUsername(String waiterUsername) {
+        this.waiterUsername = waiterUsername;
+    }
+
+
     public int getOrderId() {
         return orderId;
     }
@@ -39,7 +50,7 @@ public class Order {
         return tableId;
     }
 
-    private String tableId;
+
 
 
     public void itemReady(JPanel itemPanel){
@@ -73,19 +84,23 @@ public class Order {
 //            e.printStackTrace();
         }
 
-        Iterator<?> keys = oderObj.keys();
-        String key = (String)keys.next();
+
         try {
-            tableId = oderObj.getString(key);
+            tableId = oderObj.getString("TABLE");
+            waiterUsername = oderObj.getString("WAITER");
+            oderObj.remove("TABLE");
+            oderObj.remove("WAITER");
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        Iterator<?> keys = oderObj.keys();
+        String key;
         while( keys.hasNext() ) {
             key = (String)keys.next();
             try {
 //                if ( oderObj.get(key) instanceof JSONObject ) {
                     System.out.println(key+"---"+oderObj.get(key));
-                    ItemPanel itemPanel =  new ItemPanel(tableId,this);
+                    ItemPanel itemPanel =  new ItemPanel(tableId,waiterUsername,this);
                     itemPanel.setNameLabelText(key);
                     itemPanel.setQtyLabelText(String.valueOf(oderObj.getInt(key)));
 
@@ -101,7 +116,7 @@ public class Order {
             }
         }
         itemCount = itemPanelList.size();
-        CommuncationBus.putMessage(Constants.ORDER_RECEIVED_TOPIC);
+        CommuncationBus.putMessage(waiterUsername+"~"+Constants.ORDER_RECEIVED_TOPIC);
       //  new WebServerCommunication().sendOrder(this);
 
     }

@@ -25,12 +25,16 @@ public class MessageSender extends Thread {
             System.out.println("Sending to client: "+message);
 
             try {
-                MQTTClient mqttClient = new MQTTClient(null,"tcp://iot.eclipse.org:1883","cashier:pub",true,false,null,null);
-                if(message.equals(Constants.ORDER_RECEIVED_TOPIC)){
-                    mqttClient.publish(Constants.ORDER_RECEIVED_TOPIC, 0, message.getBytes());
+                MQTTClient mqttClient = new MQTTClient(null,"tcp://iot.eclipse.org:1883","cashier:pub",false,false,null,null);
+                String waiter = message.split("~")[0];
+                String text = message.split("~")[1];
+                if(text.equals(Constants.ORDER_RECEIVED_TOPIC)){
+                    mqttClient.publish(Constants.ORDER_RECEIVED_TOPIC+waiter, 2,text.getBytes());
                 }
                 else {
-                    mqttClient.publish(Constants.ORDER_COMPLETED_TOPIC, 0, message.getBytes());
+                    //sending order completed message
+
+                    mqttClient.publish(Constants.ORDER_COMPLETED_TOPIC+waiter, 2, text.getBytes());
                 }
 
             } catch (Throwable throwable) {

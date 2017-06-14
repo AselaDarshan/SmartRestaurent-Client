@@ -20,6 +20,7 @@ class ItemPanel {
     private JButton readyButton;
     private Boolean state;
     private String tableId;
+    private String waiterUsername;
     private Order order;
 
     public JPanel getItemPanel() {
@@ -37,9 +38,10 @@ class ItemPanel {
         this.state = state;
     }
 
-    public ItemPanel(String tableId, Order order) {
+    public ItemPanel(String tableId,String waiterUsername, Order order) {
         this.order = order;
         this.tableId = tableId;
+        this.waiterUsername = waiterUsername;
         itemPanel = new JPanel();
         final BufferedImage image;
         BufferedImage im;
@@ -101,7 +103,7 @@ class ItemPanel {
                 readyButton.setText("READY");
                 readyButton.setForeground(new Color(12,30,20));
                 readyButton.setBackground(new Color(130,150,23));
-                CommuncationBus.putMessage(name.getText()+" for table "+tableId+" is Ready!");
+                CommuncationBus.putMessage(waiterUsername+"~"+name.getText()+" for table "+tableId+" is Ready!");
 
                 order.itemReady(itemPanel);
                 readyButton.removeActionListener(this);
