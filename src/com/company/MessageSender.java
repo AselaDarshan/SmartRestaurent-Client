@@ -33,7 +33,6 @@ public class MessageSender extends Thread {
                 }
                 else {
                     //sending order completed message
-
                     mqttClient.publish(Constants.ORDER_COMPLETED_TOPIC+waiter, 2, text.getBytes());
                 }
 

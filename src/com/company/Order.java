@@ -99,14 +99,19 @@ public class Order {
             key = (String)keys.next();
             try {
 //                if ( oderObj.get(key) instanceof JSONObject ) {
+                    JSONObject menuItem = new JSONObject();
+                    menuItem = oderObj.getJSONObject(key);
+
                     System.out.println(key+"---"+oderObj.get(key));
-                    ItemPanel itemPanel =  new ItemPanel(tableId,waiterUsername,this);
+                    ItemPanel itemPanel =  new ItemPanel(tableId,waiterUsername,this,menuItem.getString(Constants.ITEM_ID_KEY));
                     itemPanel.setNameLabelText(key);
-                    itemPanel.setQtyLabelText(String.valueOf(oderObj.getInt(key)));
+
+
+                    itemPanel.setQtyLabelText(String.valueOf(menuItem.getInt(Constants.ITEM_QTY_KEY)));
 
                     itemPanelList.add(itemPanel.getItemPanel());
 
-                    itemList.add(new Item(0,oderObj.getInt(key),key));
+                    itemList.add(new Item(0,menuItem.getInt(Constants.ITEM_QTY_KEY),key,menuItem.getString(Constants.ITEM_ID_KEY)));
 
 
 //                }

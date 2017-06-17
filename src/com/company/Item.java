@@ -9,10 +9,16 @@ public class Item {
     private int qty;
     private String name;
     private int menuId;
-
-
-
+    private String orderItemId;
     private int parentCategory;
+
+    public String getOrderItemId() {
+        return orderItemId;
+    }
+
+    public void setOrderItemId(String orderItemId) {
+        this.orderItemId = orderItemId;
+    }
 
     public int getParentCategory() {
         return parentCategory;
@@ -34,8 +40,6 @@ public class Item {
         this.name = name;
     }
 
-
-
     public int getMenuId() {
         return menuId;
     }
@@ -44,12 +48,11 @@ public class Item {
         this.menuId = menuId;
     }
 
-
-
-    public Item(double amount,int qty,String name){
+    public Item(double amount,int qty,String name,String orderItemId){
         this.amount = amount;
         this.qty = qty;
         this.name =name;
+        this.orderItemId = orderItemId;
     }
 
     public double getAmount() {

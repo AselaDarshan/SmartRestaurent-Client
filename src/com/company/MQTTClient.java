@@ -275,6 +275,12 @@ public class MQTTClient implements MqttCallback {
         // An application may choose to implement reconnection
         // logic at this point. This sample simply exits.
         log("Connection to " + brokerUrl + " lost!" + cause);
+        if(cause.toString().contains("Timed out")){
+            log("timed out. re-subscribing..");
+            MQTTCommuncationThread r1 = new MQTTCommuncationThread(this.orderWindow);
+            Thread t1 = new Thread(r1);
+            t1.start();
+        }
        // CommuncationBus.putMessage("connection_lost");
       //  System.exit(1);
     }
