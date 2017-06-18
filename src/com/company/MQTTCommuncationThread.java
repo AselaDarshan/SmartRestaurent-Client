@@ -12,9 +12,10 @@ public class MQTTCommuncationThread implements Runnable {
     public void run() {
          try {
              MQTTClient mqttClient = new MQTTClient(orderWindow,"tcp://iot.eclipse.org:1883", "cashier", false, false, null, null);
+             mqttClient.setBillPrinter(new BillPrinter());
+             mqttClient.subscribe("new_order","print_bill",2);
 
-             mqttClient.subscribe("new_order",2);
-        } catch (Throwable throwable) {
+         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
     }

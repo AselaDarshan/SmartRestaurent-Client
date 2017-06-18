@@ -16,6 +16,7 @@
 
 package com.company;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.Arrays;
@@ -80,6 +81,12 @@ public class MQTTClient implements MqttCallback {
     private String password;
     private String userName;
     private OrderWindow orderWindow;
+
+    public void setBillPrinter(BillPrinter billPrinter) {
+        this.billPrinter = billPrinter;
+    }
+
+    private BillPrinter billPrinter;
 
     /**
      * Constructs an instance of the sample client wrapper
@@ -208,7 +215,7 @@ public class MQTTClient implements MqttCallback {
      * @param qos the maximum quality of service to receive messages at for this subscription
      * @throws MqttException
      */
-    public void subscribe(String topicName, int qos) throws Throwable {
+    public void subscribe(String topicName,String topic2, int qos) throws Throwable {
         // Use a state machine to decide which step to do next. State change occurs
         // when a notification is received that an MQTT action has completed
         log("Subscribing.. state :"+state+" topic:"+topicName);
@@ -223,6 +230,7 @@ public class MQTTClient implements MqttCallback {
                     // Subscribe using a non-blocking subscribe
                     Subscriber sub = new Subscriber();
                     sub.doSubscribe(topicName, qos);
+                    sub.doSubscribe(topic2, qos);
                     break;
                 case SUBSCRIBED:
                     // Block until Enter is pressed allowing messages to arrive
@@ -281,6 +289,12 @@ public class MQTTClient implements MqttCallback {
             Thread t1 = new Thread(r1);
             t1.start();
         }
+        else{
+            log("lost. re-subscribing..");
+            MQTTCommuncationThread r1 = new MQTTCommuncationThread(this.orderWindow);
+            Thread t1 = new Thread(r1);
+            t1.start();
+        }
        // CommuncationBus.putMessage("connection_lost");
       //  System.exit(1);
     }
@@ -309,7 +323,7 @@ public class MQTTClient implements MqttCallback {
     /**
      * @see MqttCallback#messageArrived(String, MqttMessage)
      */
-    public void messageArrived(String topic, MqttMessage message) throws MqttException {
+    public void messageArrived(String topic, MqttMessage message) throws MqttException, FileNotFoundException {
         // Called when a message arrives from the server that matches any
         // subscription made by the client
         String time = new Timestamp(System.currentTimeMillis()).toString();
@@ -320,6 +334,9 @@ public class MQTTClient implements MqttCallback {
 
         if(topic.equals("new_order")){
             orderWindow.addOrder(new String(message.getPayload()));
+        }
+        if(topic.equals("print_bill")){
+           billPrinter.printBill(new String(message.getPayload()));
         }
     }
 
