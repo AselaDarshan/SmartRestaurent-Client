@@ -1,6 +1,5 @@
 package com.company;
 
-import javafx.print.Printer;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -33,6 +32,7 @@ import java.util.Iterator;
 public class BillPrinter {
 
     private ArrayList<String> itemIdList;
+    private int orderId;
 
     public void printBill(String orderObjectString)  {
         itemIdList = new ArrayList<>();
@@ -48,7 +48,7 @@ public class BillPrinter {
         try {
             oderObj = new JSONObject(orderObjectString);
             String waiter = oderObj.getString("WAITER");
-            int orderId = oderObj.getInt("ORDER_ID");
+            orderId = oderObj.getInt("ORDER_ID");
             oderObj.remove("WAITER");
             oderObj.remove("ORDER_ID");
             DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss a");
@@ -198,9 +198,18 @@ public class BillPrinter {
             boolean printed = editorPane.print(null, null, true, service, aset, true);
             if(printed) {
                 System.out.println("Print success");
-                new AndroidLikeToast().showDialog("Print Success",AndroidLikeToast.LENGTH_SHORT);
-                for(String itemId:itemIdList)
-                    new WebServerCommunication().changeStateOfOrder(itemId,Constants.ITEM_STATE_COMPLETED);
+                new AndroidLikeToast().showDialog("Print job has been submitted to the printer",AndroidLikeToast.LENGTH_SHORT);
+                String response = null;
+                for(String itemId:itemIdList) {
+                    response = new WebServerCommunication().changeStateOfOrderItem(itemId, Constants.ITEM_STATE_COMPLETED);
+                }
+                if(response!=null){
+                    new WebServerCommunication().changeStateOfOrder(orderId,Constants.ORDER_STATUS_COMPLETED_ID);
+                }
+                else
+                    new AndroidLikeToast().showDialog("Database Update Failed! Network error",AndroidLikeToast.LENGTH_SHORT);
+
+
             }
             else{
                 System.out.println("Print canceled");
@@ -208,7 +217,13 @@ public class BillPrinter {
             return;
         }
         catch (PrinterException e) {
+            new AndroidLikeToast().showDialog("Printing failed!",AndroidLikeToast.LENGTH_SHORT);
+
             e.printStackTrace();
+        }
+        catch (java.lang.NullPointerException e){
+            new AndroidLikeToast().showDialog("Database Update Failed! Network error",AndroidLikeToast.LENGTH_SHORT);
+
         }
         System.out.println("Print failed!");
     }

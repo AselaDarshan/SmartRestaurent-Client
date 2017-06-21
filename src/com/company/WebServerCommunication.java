@@ -34,8 +34,21 @@ import java.util.HashMap;
  * Created by asela on 6/5/17.
  */
 public class WebServerCommunication {
+    public String changeStateOfOrder(int orderId, int state) {
+        JSONObject dataObject = new JSONObject();
+        try {
+            dataObject.put("status_id", state);
+            return sendJOSNPUT(Constants.API_BASE_URL + Constants.API_ORDERS + "/" + orderId, dataObject);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
-    public String changeStateOfOrder(String itemIdString,String state){
+        return null;
+
+    }
+
+
+    public String changeStateOfOrderItem(String itemIdString, String state){
 
         JSONObject responses  = null;
         try {

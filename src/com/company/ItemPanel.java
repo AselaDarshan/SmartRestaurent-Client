@@ -1,8 +1,6 @@
 package com.company;
 
 
-import org.eclipse.paho.client.mqttv3.MqttException;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -103,7 +101,7 @@ class ItemPanel {
             public void actionPerformed(ActionEvent e)
             {
                 try {
-                    String response = new WebServerCommunication().changeStateOfOrder(orderItemId,Constants.ITEM_STATE_PREPARED);
+                    String response = new WebServerCommunication().changeStateOfOrderItem(orderItemId,Constants.ITEM_STATE_PREPARED);
                     if(response!=null) {
                         readyButton.setText("READY");
                         readyButton.setForeground(new Color(12, 30, 20));

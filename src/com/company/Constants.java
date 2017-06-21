@@ -20,6 +20,7 @@ public class Constants {
     public static final String API_CATEGORIES = "forsj3vth_categories";
     public static final String API_STAFF = "forsj3vth_staffs";
     public static final String API_ORDER_MENUS = "forsj3vth_order_menus";
+    public static final String API_ORDERS = "forsj3vth_orders";
 
     public static final String RECORDS_KEY = "records";
 
@@ -30,4 +31,7 @@ public class Constants {
     public static String ITEM_STATE_PREPARED = "PREPARED";
     public static String ITEM_STATE_READY = "READY";
     public static String ITEM_STATE_COMPLETED = "COMPLETED";
+
+    public static int ORDER_STATUS_COMPLETED_ID = 15;
+    public static int ORDER_STATUS_PREPARING_ID = 13;
 }
