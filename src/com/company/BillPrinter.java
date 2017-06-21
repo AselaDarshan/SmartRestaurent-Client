@@ -20,23 +20,49 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 
 /**
  * Created by asela on 6/18/17.
  */
 public class BillPrinter {
+
+    private ArrayList<String> itemIdList;
+
     public void printBill(String orderObjectString)  {
+        itemIdList = new ArrayList<>();
         System.out.println("Creating bill:" +orderObjectString);
         JSONObject oderObj = null;
-        String billString = "<p style=\"font-size: 7pt; font-weight:bold;\">Sliver Ring Village Hotel</p>";
+        String billString = "<p>_____________________________</p>\n" +
+                "<p style=\"text-align:center;font-family:new century schoolbook;font-size: 9pt; font-weight:bold;\">Sliver Ring Village Hotel\n" +
+                "</p>" +
+                "<p style=\"text-align:center;font-family:new century schoolbook;font-size: 7pt;\">No:52/1, Kidagammulla, Gampaha\n" +
+                "</p>" +
+                "<p style=\"text-align:center;font-family:new century schoolbook;font-size: 7pt; \">Tel : 033-2224534" +
+                "<br>_____________________________</p>";
         try {
             oderObj = new JSONObject(orderObjectString);
+            String waiter = oderObj.getString("WAITER");
+            int orderId = oderObj.getInt("ORDER_ID");
+            oderObj.remove("WAITER");
+            oderObj.remove("ORDER_ID");
+            DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss a");
+            Date date = new Date();
+            billString+="<p style=\"font-family:new century schoolbook;font-size: 7pt;\" >"+dateFormat.format(date) +"" +
+                    "<br> Waiter: "+waiter+"&nbsp&nbsp&nbsp Order ID: "+orderId+"<br> _____________________________</p>" +
+                    "<table >";
+
             Iterator<?> keys = oderObj.keys();
             String key;
             System.out.println("item count: "+oderObj.keySet().size());
             double total=0;
             double subTotal=0;
+            DecimalFormat df = new DecimalFormat("#.00");
             while( keys.hasNext() ) {
                 key = (String) keys.next();
                 try {
@@ -44,7 +70,12 @@ public class BillPrinter {
                     JSONObject menuItem;
                     menuItem = oderObj.getJSONObject(key);
                     subTotal = menuItem.getDouble(Constants.ITEM_PRICE_KEY)*menuItem.getInt(Constants.ITEM_QTY_KEY);
-                    billString+="<p style=\"font-size: 8pt\">"+menuItem.getString(Constants.ITEM_NAME_KEY)+" "+menuItem.getDouble(Constants.ITEM_PRICE_KEY)+" * "+menuItem.getString(Constants.ITEM_QTY_KEY)+"="+subTotal+"</p>";
+
+                    itemIdList.add(menuItem.getString(Constants.ITEM_ID_KEY));
+
+                    String subTotalFormated = df.format(subTotal);
+
+                    billString+="<tr style=\"font-size: 8pt\"><td> "+menuItem.getString(Constants.ITEM_QTY_KEY)+"x</td><td >"+menuItem.getString(Constants.ITEM_NAME_KEY)+"</td><td style=\"text-align:right\">"+subTotalFormated +"</td></tr>";
                     total+=subTotal;
 //                }
                 } catch (JSONException e) {
@@ -52,7 +83,11 @@ public class BillPrinter {
                     e.printStackTrace();
                 }
             }
-            billString+="<p style=\"font-size: 8pt;font-weight:bold;\">Total: "+total+"</p>";
+            String totalFormated = df.format(total);
+            billString+="<tr><td></td><td></td><td>-----------</td></tr>";
+            billString+="<tr><td></td><td><p style=\"font-size: 8pt;font-weight:bold;\">Total:</td><td style=\"font-size: 8pt;text-align:right\"> "+totalFormated+"</p></td></tr></table>" +
+                    "<p>_____________________________</p>"+
+                    "<p style=\"text-align:center;font-family:new century schoolbook;font-size: 8pt; font-weight:bold;\">Thank you!</p>";
         } catch (JSONException e) {
             System.out.println("Json error in decoding");
 //            e.printStackTrace();
@@ -94,6 +129,53 @@ public class BillPrinter {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        JFrame frame= new JFrame("Bill");
+
+        JPanel panel =  new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+
+        JPanel buttonPanel = new JPanel();
+        panel.add(editorPane);
+
+        JButton printButton =  new JButton("Print");
+        printButton.addActionListener(e -> {
+                   print(editorPane);
+                    frame.dispose();
+                }
+
+        );
+        JButton closeButton =  new JButton("Close");
+        closeButton.addActionListener(e -> {
+                    frame.dispose();                }
+
+        );
+        buttonPanel.add(closeButton);
+        buttonPanel.add(printButton);
+
+        panel.add(buttonPanel);
+
+        frame.setContentPane(panel);
+        frame.setSize(200,400);
+        frame.setVisible(true);
+
+
+
+
+    }
+    private static PrintService findPrintService(String printerName,
+                                                 PrintService[] services) {
+        for (PrintService service : services) {
+            if (service.getName().equalsIgnoreCase(printerName)) {
+                return service;
+            }
+        }
+
+        return null;
+    }
+
+    private void print(JEditorPane editorPane){
+        //printer setup
         PrintRequestAttributeSet aset = new HashPrintRequestAttributeSet();
 
         aset.add(OrientationRequested.PORTRAIT);
@@ -108,13 +190,21 @@ public class BillPrinter {
         PrintService printService[] = PrintServiceLookup.lookupPrintServices(
                 flavor, aset);
 
-        PrintService service = findPrintService("wd", printService);
+        PrintService service = findPrintService("XP-58", printService);
 
 
 
         try {
-            editorPane.print(null, null, true, service, aset, true);
-            System.out.println("Print success");
+            boolean printed = editorPane.print(null, null, true, service, aset, true);
+            if(printed) {
+                System.out.println("Print success");
+                new AndroidLikeToast().showDialog("Print Success",AndroidLikeToast.LENGTH_SHORT);
+                for(String itemId:itemIdList)
+                    new WebServerCommunication().changeStateOfOrder(itemId,Constants.ITEM_STATE_COMPLETED);
+            }
+            else{
+                System.out.println("Print canceled");
+            }
             return;
         }
         catch (PrinterException e) {
@@ -122,15 +212,5 @@ public class BillPrinter {
         }
         System.out.println("Print failed!");
     }
-    private static PrintService findPrintService(String printerName,
-                                                 PrintService[] services) {
-        for (PrintService service : services) {
-            if (service.getName().equalsIgnoreCase(printerName)) {
-                return service;
-            }
-        }
 
-        return null;
-    }
-
-    }
+}

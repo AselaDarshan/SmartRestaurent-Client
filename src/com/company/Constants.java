@@ -12,4 +12,22 @@ public class Constants {
 
     public static String ITEM_NAME_KEY = "item_name_key";
     public static String ITEM_PRICE_KEY = "item_price_key";
+//    public static String CLIENT_ID_SUB = "cashier_sub";
+//    public static String CLIENT_ID_PUB = "cashier_pub";
+    public static String MQTT_BROKER_URL = "tcp://development.enetlk.com:1884";
+
+    public static final String API_MENU = "forsj3vth_menus";
+    public static final String API_CATEGORIES = "forsj3vth_categories";
+    public static final String API_STAFF = "forsj3vth_staffs";
+    public static final String API_ORDER_MENUS = "forsj3vth_order_menus";
+
+    public static final String RECORDS_KEY = "records";
+
+    public static final String SERVER_IP = "http://resmng.enetlk.com";
+    public static final String API_BASE_URL = SERVER_IP+"/api/api.php/";
+
+    public static String ITEM_STATE_SENT = "SENT";
+    public static String ITEM_STATE_PREPARED = "PREPARED";
+    public static String ITEM_STATE_READY = "READY";
+    public static String ITEM_STATE_COMPLETED = "COMPLETED";
 }

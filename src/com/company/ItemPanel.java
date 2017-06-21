@@ -102,13 +102,24 @@ class ItemPanel {
         {
             public void actionPerformed(ActionEvent e)
             {
-                readyButton.setText("READY");
-                readyButton.setForeground(new Color(12,30,20));
-                readyButton.setBackground(new Color(130,150,23));
-                CommuncationBus.putMessage(waiterUsername+"~"+qty.getText()+"x "+name.getText()+" for table "+tableId+" is Ready!`"+orderItemId);
+                try {
+                    String response = new WebServerCommunication().changeStateOfOrder(orderItemId,Constants.ITEM_STATE_PREPARED);
+                    if(response!=null) {
+                        readyButton.setText("READY");
+                        readyButton.setForeground(new Color(12, 30, 20));
+                        readyButton.setBackground(new Color(130, 150, 23));
+                        CommuncationBus.putMessage(waiterUsername + "~" + qty.getText() + "x " + name.getText() + " for table " + tableId + " is Ready!`" + orderItemId);
 
-                order.itemReady(itemPanel);
-                readyButton.removeActionListener(this);
+                        order.itemReady(itemPanel);
+                        readyButton.removeActionListener(this);
+                    }
+                    else{
+                        new AndroidLikeToast().showDialog("Can't send message. No network connection",AndroidLikeToast.LENGTH_LONG);
+                    }
+                }catch (java.lang.NullPointerException ex){
+                    new AndroidLikeToast().showDialog("Can't send the order completed message. No network connection",AndroidLikeToast.LENGTH_LONG);
+                }
+
 
             }
         });

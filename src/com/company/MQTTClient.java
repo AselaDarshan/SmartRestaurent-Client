@@ -80,7 +80,7 @@ public class MQTTClient implements MqttCallback {
     boolean 			donext = false;
     private String password;
     private String userName;
-    private OrderWindow orderWindow;
+    private OrderWindow orderWindow=null;
 
     public void setBillPrinter(BillPrinter billPrinter) {
         this.billPrinter = billPrinter;
@@ -233,15 +233,16 @@ public class MQTTClient implements MqttCallback {
                     sub.doSubscribe(topic2, qos);
                     break;
                 case SUBSCRIBED:
+
                     // Block until Enter is pressed allowing messages to arrive
-                    log("Press <Enter> to exit");
-                    try {
-                        System.in.read();
-                    } catch (IOException e) {
-                        //If we can't read we'll just exit
-                    }
-                    state = DISCONNECT;
-                    donext = true;
+//                    log("Press <Enter> to exit");
+//                    try {
+//                        System.in.read();
+//                    } catch (IOException e) {
+//                        //If we can't read we'll just exit
+//                    }
+//                    state = DISCONNECT;
+//                    donext = true;
                     break;
                 case DISCONNECT:
                     Disconnector disc = new Disconnector();
@@ -285,12 +286,14 @@ public class MQTTClient implements MqttCallback {
         log("Connection to " + brokerUrl + " lost!" + cause);
         if(cause.toString().contains("Timed out")){
             log("timed out. re-subscribing..");
+            new AndroidLikeToast().showDialog("Connection Lost! Retrying..",AndroidLikeToast.LENGTH_LONG);
             MQTTCommuncationThread r1 = new MQTTCommuncationThread(this.orderWindow);
             Thread t1 = new Thread(r1);
             t1.start();
         }
         else{
             log("lost. re-subscribing..");
+            new AndroidLikeToast().showDialog("Connection Lost! Retrying..",AndroidLikeToast.LENGTH_LONG);
             MQTTCommuncationThread r1 = new MQTTCommuncationThread(this.orderWindow);
             Thread t1 = new Thread(r1);
             t1.start();
@@ -332,7 +335,7 @@ public class MQTTClient implements MqttCallback {
                 "  Message:\t" + new String(message.getPayload()) +
                 "  QoS:\t" + message.getQos());
 
-        if(topic.equals("new_order")){
+        if(topic.equals(Parameters.subTopic1)){
             orderWindow.addOrder(new String(message.getPayload()));
         }
         if(topic.equals("print_bill")){
@@ -395,6 +398,7 @@ public class MQTTClient implements MqttCallback {
                 public void onSuccess(IMqttToken asyncActionToken) {
                     log("Connected");
                     state = CONNECTED;
+
                     carryOn();
                 }
 
@@ -492,6 +496,9 @@ public class MQTTClient implements MqttCallback {
             IMqttActionListener subListener = new IMqttActionListener() {
                 public void onSuccess(IMqttToken asyncActionToken) {
                     log("Subscribe Completed");
+                    new AndroidLikeToast().showDialog("Connected !",AndroidLikeToast.LENGTH_LONG);
+                    if(orderWindow!=null)
+                        orderWindow.mqttSubscribedCallback();
                     state = SUBSCRIBED;
                     carryOn();
                 }

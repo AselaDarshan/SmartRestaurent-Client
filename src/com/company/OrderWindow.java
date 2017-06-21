@@ -23,6 +23,14 @@ public class OrderWindow {
     private JFrame frame;
 
     private int count = 0;
+    private boolean isOrdersRetreived = false;
+
+    public void mqttSubscribedCallback(){
+        if(!isOrdersRetreived) {
+            new WebServerCommunication().retreiveOrders(this);
+            isOrdersRetreived = true;
+        }
+    }
 
     public OrderWindow(){
         try {
@@ -65,6 +73,7 @@ public class OrderWindow {
             System.out.println("File Not Found");
             e.printStackTrace();
         }
+
 
 //        JButton closeButton = new JButton("x");
 //        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -174,7 +183,10 @@ public class OrderWindow {
         label.setVisible(true);
         count++;
         label.setForeground(Color.ORANGE);
-        label.setText("Table "+order.getTableId()+" ~ "+order.getWaiterUsername());
+        if(Integer.parseInt(order.getTableId())>99)
+            label.setText("Room "+order.getTableId()+" ~ "+order.getWaiterUsername());
+        else
+            label.setText("Table "+order.getTableId()+" ~ "+order.getWaiterUsername());
         label.setFont(new Font("serif", Font.PLAIN, 24));
         JPanel titlePanel = new JPanel();
 

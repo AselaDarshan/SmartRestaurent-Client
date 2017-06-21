@@ -25,7 +25,7 @@ public class MessageSender extends Thread {
             System.out.println("Sending to client: "+message);
 
             try {
-                MQTTClient mqttClient = new MQTTClient(null,"tcp://iot.eclipse.org:1883","cashier:pub",false,false,null,null);
+                MQTTClient mqttClient = new MQTTClient(null,Constants.MQTT_BROKER_URL,Parameters.myid+"pub",false,false,null,null);
                 String waiter = message.split("~")[0];
                 String text = message.split("~")[1];
                 if(text.equals(Constants.ORDER_RECEIVED_TOPIC)){
