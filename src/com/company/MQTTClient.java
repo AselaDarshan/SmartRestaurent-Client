@@ -231,6 +231,8 @@ public class MQTTClient implements MqttCallback {
                     Subscriber sub = new Subscriber();
                     sub.doSubscribe(topicName, qos);
                     sub.doSubscribe(topic2, qos);
+                    //subscribe to own heartbeat message
+                    sub.doSubscribe(Constants.HEARTBEAT_TOPIC+Parameters.myid,qos);
                     break;
                 case SUBSCRIBED:
 
@@ -338,9 +340,13 @@ public class MQTTClient implements MqttCallback {
         if(topic.equals(Parameters.subTopic1)){
             orderWindow.addOrder(new String(message.getPayload()));
         }
-        if(topic.equals("print_bill")){
+        else if(topic.equals("print_bill")){
            billPrinter.printBill(new String(message.getPayload()));
         }
+        else if(topic.equals(Constants.HEARTBEAT_TOPIC+Parameters.myid)){
+            GlobalState.heartbeat = true;
+        }
+
     }
 
 //    /****************************************************************/

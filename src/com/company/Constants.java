@@ -6,6 +6,7 @@ package com.company;
 public class Constants {
     public static final String ORDER_RECEIVED_TOPIC = "silver_ring_order_received";
     public static final String ORDER_COMPLETED_TOPIC = "silver_ring_order_completed";
+    public static final String HEARTBEAT_TOPIC = "sliverring_device_heartbeat";
 
     public static String ITEM_QTY_KEY = "item_qty";
     public static String ITEM_ID_KEY = "item_id";

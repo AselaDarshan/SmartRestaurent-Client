@@ -42,6 +42,9 @@ public class OrderWindow {
             MessageSender sendHandler = new MessageSender();
             sendHandler.start();
 
+            HeartbeatHandler heartbeatHandler = new HeartbeatHandler();
+            heartbeatHandler.start();
+
         }catch (Throwable throwable) {
             throwable.printStackTrace();
         }

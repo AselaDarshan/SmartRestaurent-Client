@@ -48,7 +48,7 @@ public class MQTTCommuncationThread implements Runnable {
                 retryCount++;
             }
             if(retryCount>retryLimit){
-                new AndroidLikeToast().showDialog("Can't connect!\n Please test the internet connection and restart the program",AndroidLikeToast.LENGTH_VERY_LONG);
+                new AndroidLikeToast().showDialog("Can't connect!\n Please check the internet connection and restart the program",AndroidLikeToast.LENGTH_VERY_LONG);
 //                msg = new JOptionPane("Can't connect to the messaging server. Please test the internet connection and restart the program", WARNING_MESSAGE);
 //                dialog = msg.createDialog("Can't connect");
 //                dialog.setAlwaysOnTop(true); // to show top of all other application
