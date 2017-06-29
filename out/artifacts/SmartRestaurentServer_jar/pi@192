@@ -1,0 +1,5 @@
+My Id:silver_ring_kitchen
+Location:new_order_kitchen
+Print Bill:no_print_bill
+Location Id:12
+Number of MQTT retries:50

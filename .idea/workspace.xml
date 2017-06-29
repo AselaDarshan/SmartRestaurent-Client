@@ -10,15 +10,1096 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="365d4200-10d4-4b41-8323-3d9d9cfe64bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/GlobalState.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/HeartbeatHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/junit.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-core-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-core-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-core.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-device-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-device-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-device.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-example-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-example-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-example.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-gpio-extension-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-gpio-extension-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-gpio-extension.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-service-javadoc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-service-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pi4j-service.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/GPIOController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SmartRestaurentServer_jar/org.eclipse.paho.client.mqttv3-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/apache/http/client/version.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/apache/http/version.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/logging/jsr47min.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/logging/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/persist/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/org/eclipse/paho/client/mqttv3/util/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/DefaultDateTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/ExclusionStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldAttributes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldNamingPolicy$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldNamingPolicy$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldNamingPolicy$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldNamingPolicy$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldNamingPolicy$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldNamingPolicy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/FieldNamingStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson$FutureTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/Gson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/GsonBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/InstanceCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonDeserializationContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonDeserializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonElement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonIOException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonNull.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonParseException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonPrimitive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonSerializationContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonSerializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonStreamParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/JsonSyntaxException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/LongSerializationPolicy$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/LongSerializationPolicy$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/LongSerializationPolicy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/TreeTypeAdapter$SingleTypeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/TreeTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/TypeAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/TypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/TypeAdapterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/annotations/Expose.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/annotations/JsonAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/annotations/SerializedName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/annotations/Since.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/annotations/Until.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/$Gson$Preconditions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/$Gson$Types$GenericArrayTypeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/$Gson$Types$ParameterizedTypeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/$Gson$Types$WildcardTypeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/$Gson$Types.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ConstructorConstructor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/Excluder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/Excluder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/JsonReaderInternalAccess.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LazilyParsedNumber.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$AvlBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$AvlIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$EntrySet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$EntrySet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$KeySet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$KeySet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$LinkedTreeMapIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedHashTreeMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap$EntrySet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap$EntrySet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap$KeySet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap$KeySet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap$LinkedTreeMapIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/LinkedTreeMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/ObjectConstructor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/Primitives.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/Streams$AppendableWriter$CurrentWrite.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/Streams$AppendableWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/Streams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/UnsafeAllocator$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/UnsafeAllocator$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/UnsafeAllocator$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/UnsafeAllocator$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/UnsafeAllocator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ArrayTypeAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ArrayTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/CollectionTypeAdapterFactory$Adapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/CollectionTypeAdapterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/DateTypeAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/DateTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonTreeReader$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonTreeReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonTreeWriter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/JsonTreeWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/MapTypeAdapterFactory$Adapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/MapTypeAdapterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ObjectTypeAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ObjectTypeAdapter$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ObjectTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/SqlDateTypeAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/SqlDateTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TimeTypeAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TimeTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapterRuntimeTypeWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$22.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$23.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$24.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$25.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$26$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$26.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$27.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$28.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$29.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$31.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$32.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$33.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$34.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$35$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$35.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$36.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters$EnumTypeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/TypeAdapters.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/internal/bind/util/ISO8601Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/reflect/TypeToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/stream/JsonReader$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/stream/JsonReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/stream/JsonScope.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/stream/JsonToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/stream/JsonWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/google/gson/stream/MalformedJsonException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/Log.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogConfigurationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogFactory$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogFactory$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogFactory$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogFactory$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogFactory$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/LogSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/AvalonLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/Jdk13LumberjackLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/Jdk14Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/Log4JLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/LogFactoryImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/LogFactoryImpl$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/LogFactoryImpl$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/LogFactoryImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/LogKitLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/NoOpLog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/ServletContextCleaner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/SimpleLog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/SimpleLog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/WeakHashtable$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/WeakHashtable$Entry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/WeakHashtable$Referenced.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/WeakHashtable$WeakKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/commons/logging/impl/WeakHashtable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ConnectionClosedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ConnectionReuseStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/Consts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ContentTooLongException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ExceptionLogger$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ExceptionLogger$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ExceptionLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/FormattedHeader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/Header.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HeaderElement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HeaderElementIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HeaderIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpConnectionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpConnectionMetrics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpEntityEnclosingRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpHeaders.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpHost.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpInetConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpRequestFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpRequestInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpResponseFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpResponseInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpServerConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/HttpVersion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/MalformedChunkCodingException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/MessageConstraintException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/MethodNotSupportedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/NameValuePair.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/NoHttpResponseException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ParseException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ProtocolException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ProtocolVersion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ReasonPhraseCatalog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/RequestLine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/StatusLine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/TokenIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/TruncatedChunkException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/UnsupportedHttpVersionException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/annotation/Experimental.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/annotation/GuardedBy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/annotation/Immutable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/annotation/NotThreadSafe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/annotation/Obsolete.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/annotation/ThreadSafe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AUTH.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthOption.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthProtocolState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthSchemeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthSchemeProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthSchemeRegistry$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthSchemeRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthScope.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/AuthenticationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/BasicUserPrincipal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/ChallengeState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/ContextAwareAuthScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/Credentials.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/InvalidCredentialsException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/KerberosCredentials.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/MalformedChallengeException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/NTCredentials.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/NTUserPrincipal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/UsernamePasswordCredentials.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/params/AuthPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/params/AuthParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/auth/params/AuthParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/AuthCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/AuthenticationHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/AuthenticationStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/BackoffManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/CircularRedirectException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/ClientProtocolException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/ConnectionBackoffStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/CookieStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/CredentialsProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/HttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/HttpRequestRetryHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/HttpResponseException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/NonRepeatableRequestException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/RedirectException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/RedirectHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/RedirectStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/RequestDirector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/ResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/ServiceUnavailableRetryStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/UserTokenHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/config/AuthSchemes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/config/CookieSpecs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/config/RequestConfig$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/config/RequestConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/DecompressingEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/DeflateDecompressingEntity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/DeflateDecompressingEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/DeflateInputStream$DeflateStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/DeflateInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/EntityBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/GzipCompressingEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/GzipDecompressingEntity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/GzipDecompressingEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/InputStreamFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/LazyDecompressingInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/entity/UrlEncodedFormEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/AbortableHttpRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/AbstractExecutionAwareRequest$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/AbstractExecutionAwareRequest$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/AbstractExecutionAwareRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/CloseableHttpResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/Configurable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpDelete.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpExecutionAware.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpGet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpHead.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpOptions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpPatch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpPost.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpPut.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpRequestBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpRequestWrapper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpRequestWrapper$HttpEntityEnclosingRequestWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpRequestWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpTrace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/HttpUriRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/RequestBuilder$InternalEntityEclosingRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/RequestBuilder$InternalRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/methods/RequestBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/params/AllClientPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/params/AuthPolicy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/params/ClientPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/params/ClientParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/params/CookiePolicy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/params/HttpClientParamConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/params/HttpClientParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ClientContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ClientContextConfigurer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/HttpClientContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestAcceptEncoding.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestAddCookies.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestAuthCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestAuthenticationBase$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestAuthenticationBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestClientConnControl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestDefaultHeaders.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestExpectContinue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestProxyAuthentication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/RequestTargetAuthentication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ResponseAuthCache$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ResponseAuthCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ResponseContentEncoding$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ResponseContentEncoding$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ResponseContentEncoding.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/protocol/ResponseProcessCookies.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/CloneUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/DateUtils$DateFormatHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/DateUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/HttpClientUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/Idn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/JdkIdn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/Punycode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/Rfc3492Idn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/URIBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/URIUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/utils/URLEncodedUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/client/version.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/concurrent/BasicFuture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/concurrent/Cancellable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/concurrent/FutureCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/ConnectionConfig$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/ConnectionConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/Lookup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/MessageConstraints$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/MessageConstraints.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/Registry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/RegistryBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/SocketConfig$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/config/SocketConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/BasicEofSensorWatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/BasicManagedEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ClientConnectionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ClientConnectionManagerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ClientConnectionOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ClientConnectionRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ConnectTimeoutException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ConnectionKeepAliveStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ConnectionPoolTimeoutException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ConnectionReleaseTrigger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ConnectionRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/DnsResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/EofSensorInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/EofSensorWatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/HttpClientConnectionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/HttpClientConnectionOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/HttpConnectionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/HttpHostConnectException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/HttpInetSocketAddress.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/HttpRoutedConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ManagedClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ManagedHttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/MultihomePlainSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/OperatedClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/SchemePortResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/UnsupportedSchemeException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnConnectionPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnConnectionParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnManagerPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnManagerParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnManagerParams$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnManagerParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnPerRoute.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnPerRouteBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnRoutePNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnRouteParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/params/ConnRouteParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/BasicRouteDirector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/HttpRoute.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/HttpRouteDirector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/HttpRoutePlanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/RouteInfo$LayerType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/RouteInfo$TunnelType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/RouteInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/routing/RouteTracker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/HostNameResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/LayeredSchemeSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/LayeredSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/LayeredSocketFactoryAdaptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/PlainSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/Scheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SchemeLayeredSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SchemeLayeredSocketFactoryAdaptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SchemeLayeredSocketFactoryAdaptor2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SchemeRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SchemeSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SchemeSocketFactoryAdaptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/scheme/SocketFactoryAdaptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/socket/ConnectionSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/socket/LayeredConnectionSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/socket/PlainConnectionSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/AbstractVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/AllowAllHostnameVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/BrowserCompatHostnameVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/DefaultHostnameVerifier$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/DefaultHostnameVerifier$HostNameType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/DefaultHostnameVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/NoopHostnameVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/PrivateKeyDetails.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/PrivateKeyStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SSLConnectionSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SSLContextBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SSLContexts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SSLInitializationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SSLSocketFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/StrictHostnameVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/SubjectName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/TrustSelfSignedStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/TrustStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/ssl/X509HostnameVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/util/DomainType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/util/InetAddressUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/util/PublicSuffixList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/util/PublicSuffixListParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/util/PublicSuffixMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/conn/util/PublicSuffixMatcherLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/ClientCookie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CommonCookieAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/Cookie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieIdentityComparator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieOrigin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookiePathComparator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookiePriorityComparator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieRestrictionViolationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieSpecFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieSpecProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieSpecRegistry$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/CookieSpecRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/MalformedCookieException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/SM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/SetCookie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/SetCookie2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/params/CookieSpecPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/cookie/params/CookieSpecParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/AbstractHttpEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/BasicHttpEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/BufferedHttpEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/ByteArrayEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/ContentLengthStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/ContentProducer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/ContentType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/EntityTemplate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/FileEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/HttpEntityWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/InputStreamEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/SerializableEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/entity/StringEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/AbstractHttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/AbstractHttpServerConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/BHttpConnectionBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/ConnSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultBHttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultBHttpClientConnectionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultBHttpServerConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultBHttpServerConnectionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultConnectionReuseStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultHttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultHttpRequestFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultHttpResponseFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/DefaultHttpServerConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/EnglishReasonPhraseCatalog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/HttpConnectionMetricsImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/NoConnectionReuseStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/SocketHttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/SocketHttpServerConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/AuthSchemeBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/BasicScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/BasicSchemeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/DigestScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/DigestSchemeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/GGSSchemeBase$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/GGSSchemeBase$State.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/GGSSchemeBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/HttpAuthenticator$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/HttpAuthenticator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/HttpEntityDigester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/KerberosScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/KerberosSchemeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl$CipherGen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl$HMACMD5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl$MD4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl$NTLMMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl$Type1Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl$Type2Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl$Type3Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMEngineImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMScheme$State.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NTLMSchemeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NegotiateScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/NegotiateSchemeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/RFC2617Scheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/SPNegoScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/SPNegoSchemeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/SpnegoTokenGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/auth/UnsupportedDigestAlgorithmException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/bootstrap/HttpServer$Status.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/bootstrap/HttpServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/bootstrap/RequestListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/bootstrap/SSLServerSetupHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/bootstrap/ServerBootstrap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/bootstrap/ThreadFactoryImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/bootstrap/Worker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/AIMDBackoffManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/AbstractAuthenticationHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/AbstractHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/AbstractResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/AuthenticationStrategyAdaptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/AuthenticationStrategyImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/AutoRetryHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/BasicAuthCache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/BasicCookieStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/BasicCredentialsProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/BasicResponseHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/ClientParamsStack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/Clock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/CloseableHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/CloseableHttpResponseProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/ContentEncodingHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/CookieSpecRegistries.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DecompressingHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultBackoffStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultClientConnectionReuseStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultConnectionKeepAliveStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultHttpRequestRetryHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultProxyAuthenticationHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultRedirectHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultRedirectStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultRedirectStrategyAdaptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultRequestDirector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultServiceUnavailableRetryStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultTargetAuthenticationHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/DefaultUserTokenHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/EntityEnclosingRequestWrapper$EntityWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/EntityEnclosingRequestWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/FutureRequestExecutionMetrics$DurationCounter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/FutureRequestExecutionMetrics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/FutureRequestExecutionService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/HttpAuthenticator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/HttpClientBuilder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/HttpClientBuilder$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/HttpClientBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/HttpClients.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/HttpRequestFutureTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/HttpRequestTaskCallable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/IdleConnectionEvictor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/IdleConnectionEvictor$DefaultThreadFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/IdleConnectionEvictor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/InternalHttpClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/InternalHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/LaxRedirectStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/MinimalHttpClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/MinimalHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/NoopUserTokenHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/NullBackoffStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/ProxyAuthenticationStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/ProxyClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/RedirectLocations.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/RequestWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/RoutedRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/StandardHttpRequestRetryHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/SystemClock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/SystemDefaultCredentialsProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/SystemDefaultHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/TargetAuthenticationStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/client/TunnelRefusedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/AbstractClientConnAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/AbstractPoolEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/AbstractPooledConnAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/BasicClientConnectionManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/BasicClientConnectionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/BasicHttpClientConnectionManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/BasicHttpClientConnectionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/CPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/CPoolEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/CPoolProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/ConnectionShutdownException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultClientConnectionOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultHttpClientConnectionOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultHttpResponseParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultHttpResponseParserFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultHttpRoutePlanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultManagedHttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultProxyRoutePlanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultResponseParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultRoutePlanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/DefaultSchemePortResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/HttpConnPool$InternalConnFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/HttpConnPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/HttpPoolEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/IdleConnectionHandler$TimeValues.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/IdleConnectionHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/InMemoryDnsResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/LoggingInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/LoggingManagedHttpClientConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/LoggingOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/LoggingSessionInputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/LoggingSessionOutputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/ManagedClientConnectionImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/ManagedHttpClientConnectionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/PoolingClientConnectionManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/PoolingClientConnectionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/PoolingHttpClientConnectionManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/PoolingHttpClientConnectionManager$ConfigData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/PoolingHttpClientConnectionManager$InternalConnectionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/PoolingHttpClientConnectionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/ProxySelectorRoutePlanner$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/ProxySelectorRoutePlanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SchemeRegistryFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SingleClientConnManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SingleClientConnManager$ConnAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SingleClientConnManager$PoolEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SingleClientConnManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SystemDefaultDnsResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SystemDefaultRoutePlanner$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/SystemDefaultRoutePlanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/Wire.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/AbstractConnPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/BasicPoolEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/BasicPoolEntryRef.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/BasicPooledConnAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/ConnPoolByRoute$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/ConnPoolByRoute.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/PoolEntryRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/RouteSpecificPool$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/RouteSpecificPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/WaitingThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/conn/tsccm/WaitingThreadAborter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/AbstractCookieAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/AbstractCookieSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicClientCookie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicClientCookie2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicCommentHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicDomainHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicExpiresHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicMaxAgeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicPathHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BasicSecureHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BestMatchSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BestMatchSpecFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BrowserCompatSpec$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BrowserCompatSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BrowserCompatSpecFactory$SecurityLevel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BrowserCompatSpecFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/BrowserCompatVersionAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/CookieSpecBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/DateParseException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/DateUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/DefaultCookieSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/DefaultCookieSpecProvider$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/DefaultCookieSpecProvider$CompatibilityLevel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/DefaultCookieSpecProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/IgnoreSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/IgnoreSpecFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/IgnoreSpecProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/LaxExpiresHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/LaxMaxAgeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/NetscapeDomainHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/NetscapeDraftHeaderParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/NetscapeDraftSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/NetscapeDraftSpecFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/NetscapeDraftSpecProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/PublicSuffixDomainFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/PublicSuffixFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/PublicSuffixListParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2109DomainHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2109Spec$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2109Spec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2109SpecFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2109SpecProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2109VersionHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965CommentUrlAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965DiscardAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965DomainAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965PortAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965Spec$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965Spec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965SpecFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965SpecProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC2965VersionAttributeHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265CookieSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265CookieSpecBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265CookieSpecProvider$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265CookieSpecProvider$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265CookieSpecProvider$CompatibilityLevel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265CookieSpecProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265LaxSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/cookie/RFC6265StrictSpec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/entity/DisallowIdentityContentLengthStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/entity/EntityDeserializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/entity/EntitySerializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/entity/LaxContentLengthStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/entity/StrictContentLengthStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/BackoffStrategyExec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/ClientExecChain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/ConnectionHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/HttpResponseProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/MainClientExec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/MinimalClientExec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/ProtocolExec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/RedirectExec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/RequestAbortedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/RequestEntityProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/ResponseEntityProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/RetryExec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/ServiceUnavailableRetryExec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/execchain/TunnelRefusedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/AbstractMessageParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/AbstractMessageWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/AbstractSessionInputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/AbstractSessionOutputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/ChunkedInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/ChunkedOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/ContentLengthInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/ContentLengthOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpRequestParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpRequestParserFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpRequestWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpRequestWriterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpResponseParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpResponseParserFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpResponseWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/DefaultHttpResponseWriterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/EmptyInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/HttpRequestParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/HttpRequestWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/HttpResponseParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/HttpResponseWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/HttpTransportMetricsImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/IdentityInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/IdentityOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/SessionInputBufferImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/SessionOutputBufferImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/SocketInputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/io/SocketOutputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/pool/BasicConnFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/pool/BasicConnPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/impl/pool/BasicPoolEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/BufferInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/EofSensor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/HttpMessageParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/HttpMessageParserFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/HttpMessageWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/HttpMessageWriterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/HttpTransportMetrics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/SessionInputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/io/SessionOutputBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/AbstractHttpMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHeader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHeaderElement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHeaderElementIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHeaderIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHeaderValueFormatter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHeaderValueParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHttpEntityEnclosingRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHttpRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicHttpResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicLineFormatter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicLineParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicListHeaderIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicNameValuePair.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicRequestLine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicStatusLine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BasicTokenIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/BufferedHeader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/HeaderGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/HeaderValueFormatter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/HeaderValueParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/LineFormatter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/LineParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/ParserCursor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/message/TokenParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/AbstractHttpParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/BasicHttpParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/CoreConnectionPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/CoreProtocolPNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/DefaultedHttpParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpAbstractParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpConnectionParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpConnectionParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpParamConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpParamsNames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpProtocolParamBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/HttpProtocolParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/params/SyncBasicHttpParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/AbstractConnPool$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/AbstractConnPool$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/AbstractConnPool$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/AbstractConnPool$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/AbstractConnPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/ConnFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/ConnPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/ConnPoolControl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/PoolEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/PoolEntryCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/PoolEntryFuture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/PoolStats.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/pool/RouteSpecificPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/BasicHttpContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/BasicHttpProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/ChainBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/DefaultedHttpContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/ExecutionContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HTTP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpCoreContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpDateGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpExpectationVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpProcessorBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpRequestExecutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpRequestHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpRequestHandlerMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpRequestHandlerRegistry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpRequestHandlerResolver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpRequestInterceptorList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpResponseInterceptorList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpService$HttpRequestHandlerResolverAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/HttpService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/ImmutableHttpProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/RequestConnControl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/RequestContent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/RequestDate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/RequestExpectContinue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/RequestTargetHost.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/RequestUserAgent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/ResponseConnControl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/ResponseContent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/ResponseDate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/ResponseServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/SyncBasicHttpContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/UriHttpRequestHandlerMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/protocol/UriPatternMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/PrivateKeyDetails.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/PrivateKeyStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/SSLContextBuilder$KeyManagerDelegate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/SSLContextBuilder$TrustManagerDelegate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/SSLContextBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/SSLContexts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/SSLInitializationException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/ssl/TrustStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/Args.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/Asserts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/ByteArrayBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/CharArrayBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/CharsetUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/EncodingUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/EntityUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/ExceptionUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/LangUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/NetUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/TextUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/util/VersionInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/http/version.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/BufferedMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/DisconnectedBufferOptions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/IMqttActionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/IMqttAsyncClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/IMqttClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/IMqttDeliveryToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/IMqttMessageListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/IMqttToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttAsyncClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttAsyncClient$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttAsyncClient$ReconnectTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttAsyncClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttCallbackExtended.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttClientPersistence.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttConnectOptions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttDeliveryToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttPersistable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttPersistenceException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttPingSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttSecurityException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/MqttTopic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/TimerPingSender$PingTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/TimerPingSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ClientComms$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ClientComms$ConnectBG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ClientComms$DisconnectBG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ClientComms.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ClientDefaults.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ClientState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/CommsCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/CommsReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/CommsSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/CommsTokenStore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ConnectActionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/DestinationProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/DisconnectedMessageBuffer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ExceptionHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/FileLock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/IDisconnectedBufferCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/LocalNetworkModule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/MessageCatalog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/MqttPersistentData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/NetworkModule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/ResourceBundleCatalog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/SSLNetworkModule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/TCPNetworkModule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/Token.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/security/SSLSocketFactoryFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/security/SimpleBase64Encoder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/Base64$Base64Encoder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/Base64.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/HandshakeFailedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/WebSocketFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/WebSocketHandshake.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/WebSocketNetworkModule$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/WebSocketNetworkModule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/WebSocketReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/WebSocketSecureNetworkModule$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/websocket/WebSocketSecureNetworkModule.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/CountingInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttAck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttConnack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttConnect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttDisconnect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttOutputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPersistableWireMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPingReq.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPingResp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPubAck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPubComp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPubRec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPubRel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttPublish.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttReceivedMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttSuback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttSubscribe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubAck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttUnsubscribe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MqttWireMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MultiByteArrayInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/internal/wire/MultiByteInteger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/logging/JSR47Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/logging/Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/logging/LoggerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/logging/SimpleLogFormatter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/logging/jsr47min.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/logging/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/persist/MemoryPersistence.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/persist/MqttDefaultFilePersistence.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/persist/PersistanceFileFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/persist/PersistanceFileNameFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/persist/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/util/Debug.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/util/Strings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/eclipse/paho/client/mqttv3/util/package.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SmartRestaurentServer_jar/SmartRestaurentServer.jar" afterPath="$PROJECT_DIR$/out/artifacts/SmartRestaurentServer_jar/SmartRestaurentServer.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/SmartRestaurentServer/com/company/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SmartRestaurentServer_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SmartRestaurentServer_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/print.html" afterPath="$PROJECT_DIR$/print.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Constants.java" afterPath="$PROJECT_DIR$/src/com/company/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmartRestaurentServer.iml" afterPath="$PROJECT_DIR$/SmartRestaurentServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SmartRestaurentServer/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/SmartRestaurentServer/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MQTTClient.java" afterPath="$PROJECT_DIR$/src/com/company/MQTTClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MQTTCommuncationThread.java" afterPath="$PROJECT_DIR$/src/com/company/MQTTCommuncationThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/OrderWindow.java" afterPath="$PROJECT_DIR$/src/com/company/OrderWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +1118,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MQTTCommuncationThread.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MQTTCommuncationThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/MQTTCommuncationThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="50" column="80" lean-forward="false" selection-start-line="50" selection-start-column="80" selection-end-line="50" selection-end-column="80" />
+            <state relative-caret-position="320">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +1130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BillPrinter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BillPrinter.java">
+      <file leaf-file-name="GPIOController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/GPIOController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="201" column="15" lean-forward="false" selection-start-line="200" selection-start-column="16" selection-end-line="201" selection-end-column="15" />
+            <state relative-caret-position="345">
+              <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,21 +1142,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageSender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/MessageSender.java">
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="30" column="64" lean-forward="false" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+            <state relative-caret-position="120">
+              <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommuncationBus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/CommuncationBus.java">
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="36">
+              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmartRestaurentServer_jar.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/artifacts/SmartRestaurentServer_jar.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MQTTClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/MQTTClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="348" column="9" lean-forward="true" selection-start-line="348" selection-start-column="9" selection-end-line="348" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -84,9 +1195,13 @@
       <file leaf-file-name="OrderWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/OrderWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1827">
+            <state relative-caret-position="648">
               <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#6249#6250#0" expanded="false" />
+                <element signature="e#6285#6286#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,11 +1209,9 @@
       <file leaf-file-name="HeartbeatHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/HeartbeatHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="288">
               <caret line="18" column="71" lean-forward="false" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,36 +1221,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MQTTClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/MQTTClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="346" column="40" lean-forward="false" selection-start-line="346" selection-start-column="40" selection-end-line="346" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parameters.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Parameters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -181,7 +1264,6 @@
         <option value="$PROJECT_DIR$/src/com/company/Item.java" />
         <option value="$PROJECT_DIR$/src/com/company/Order.java" />
         <option value="$PROJECT_DIR$/print.html" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/config(kitchen).txt" />
         <option value="$PROJECT_DIR$/src/com/company/AndoridLikeToast.java" />
         <option value="$PROJECT_DIR$/config.txt" />
@@ -194,10 +1276,13 @@
         <option value="$PROJECT_DIR$/src/com/company/BillPrinter.java" />
         <option value="$PROJECT_DIR$/src/com/company/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/company/OrderWindow.java" />
-        <option value="$PROJECT_DIR$/src/com/company/MQTTClient.java" />
         <option value="$PROJECT_DIR$/src/com/company/GlobalState.java" />
         <option value="$PROJECT_DIR$/src/com/company/HeartbeatHandler.java" />
         <option value="$PROJECT_DIR$/src/com/company/MQTTCommuncationThread.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MQTTClient.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GPIOController.java" />
       </list>
     </option>
   </component>
@@ -227,6 +1312,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -255,7 +1341,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -334,49 +1419,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="httpcore-4.4.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpclient-4.5.3.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons-logging-1.2.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,32 +1438,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartRestaurentServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartRestaurentServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartRestaurentServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartRestaurentServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartRestaurentServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartRestaurentServer_jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartRestaurentServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartRestaurentServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,19 +1505,25 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/httpclient-4.5.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2702439" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="smartrestaurentserver" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -881,12 +1962,13 @@
       <workItem from="1498073525892" duration="3716000" />
       <workItem from="1498112077853" duration="4164000" />
       <workItem from="1498651371261" duration="435000" />
-      <workItem from="1498674410420" duration="4548000" />
+      <workItem from="1498674410420" duration="5391000" />
+      <workItem from="1498713189160" duration="13219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197964000" />
+    <option name="totallyTimeSpent" value="212026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -902,14 +1984,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2085308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2748815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34123224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.342812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284041" sideWeight="0.49227372" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -921,6 +2002,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -971,41 +2053,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/OrderWindow.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/OrderWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/ItemPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ThreadHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
@@ -1024,7 +2071,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6285#6286#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,7 +2102,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6285#6286#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,7 +2142,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6285#6286#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,13 +2206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7452">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmartRestaurentServer.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1169,13 +2221,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/OrderWindow.form">
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/event/ActionListener.java">
@@ -1214,13 +2266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/AndroidLikeToast.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1245,14 +2290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="123" column="49" lean-forward="false" selection-start-line="123" selection-start-column="49" selection-end-line="123" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ThreadHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1263,7 +2300,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="144">
           <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
@@ -1277,17 +2314,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MQTTClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="346" column="40" lean-forward="false" selection-start-line="346" selection-start-column="40" selection-end-line="346" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/MessageSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="540">
           <caret line="30" column="64" lean-forward="false" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
           <folding />
         </state>
@@ -1303,11 +2332,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/BillPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="3186">
           <caret line="201" column="15" lean-forward="false" selection-start-line="200" selection-start-column="16" selection-end-line="201" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,26 +2348,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/HeartbeatHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="288">
           <caret line="18" column="71" lean-forward="false" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/OrderWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6285#6286#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MQTTCommuncationThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/OrderWindow.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1827">
-          <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        <state relative-caret-position="-3888">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MQTTCommuncationThread.java">
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/SmartRestaurentServer_jar.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="50" column="80" lean-forward="false" selection-start-line="50" selection-start-column="80" selection-end-line="50" selection-end-column="80" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartrestaurentserver.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="285" column="11" lean-forward="true" selection-start-line="285" selection-start-column="11" selection-end-line="285" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartrestaurentserver.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MQTTClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="348" column="9" lean-forward="true" selection-start-line="348" selection-start-column="9" selection-end-line="348" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GPIOController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1350,14 +2453,25 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="javaee-facet-resources" />
-              <type id="artifact" />
+              <type id="library" />
               <type id="jpa-descriptors" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>SmartRestaurentServer:jar</last-edited>
@@ -1420,7 +2534,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.eclipse.paho.client.mqttv3-1.1.1</last-edited>
+          <last-edited>httpclient-4.0 (2)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

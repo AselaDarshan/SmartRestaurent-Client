@@ -17,7 +17,6 @@
 package com.company;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.Arrays;
 
@@ -339,9 +338,25 @@ public class MQTTClient implements MqttCallback {
 
         if(topic.equals(Parameters.subTopic1)){
             orderWindow.addOrder(new String(message.getPayload()));
+            try {
+                new GPIOController().beep_3();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            catch (java.lang.UnsatisfiedLinkError e){
+                System.out.printf("GPIO error");
+            }
         }
         else if(topic.equals("print_bill")){
            billPrinter.printBill(new String(message.getPayload()));
+//            try {
+//                new GPIOController().shortBuzzer();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            catch (java.lang.UnsatisfiedLinkError e){
+//                System.out.printf("GPIO error");
+//            }
         }
         else if(topic.equals(Constants.HEARTBEAT_TOPIC+Parameters.myid)){
             GlobalState.heartbeat = true;

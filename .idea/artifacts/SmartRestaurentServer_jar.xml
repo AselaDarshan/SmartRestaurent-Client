@@ -3,12 +3,11 @@
     <output-path>$PROJECT_DIR$/out/artifacts/SmartRestaurentServer_jar</output-path>
     <root id="archive" name="SmartRestaurentServer.jar">
       <element id="module-output" name="SmartRestaurentServer" />
-      <element id="extracted-dir" path="$USER_HOME$/Desktop/org.json-20130213.jar" path-in-jar="/" />
       <element id="file-copy" path="$PROJECT_DIR$/background.jpg" />
       <element id="file-copy" path="$PROJECT_DIR$/order_bg.jpg" />
       <element id="file-copy" path="$PROJECT_DIR$/order_title.jpg" />
       <element id="file-copy" path="$PROJECT_DIR$/orderBg.jpg" />
-      <element id="library" level="project" name="org.eclipse.paho.client.mqttv3-1.1.1" />
+      <element id="dir-copy" path="$PROJECT_DIR$/../lib" />
     </root>
   </artifact>
 </component>

@@ -6,6 +6,7 @@ package com.company;
 public class Main {
     public static void main(String[] args) {
         ConfigReader.readConfig();
+
         new OrderWindow().run();
     }
 }
